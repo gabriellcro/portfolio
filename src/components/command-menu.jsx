@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/command";
 
 import { Button } from "./ui/button";
-import { TypographyInlineCode } from "./typography-inline-code";
+import { TypographyInlineCode } from "./typography/typography-inline-code";
 
 import {
   Command,

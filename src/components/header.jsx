@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="flex justify-between max-w-[1920px] fixed backdrop-blur-sm w-full p-5">
       {isMobile ? <NavbarMobile tabs={data} /> : <NavbarDesktop tabs={data} />}
-      
+
       <ModeToggle />
     </header>
   );
