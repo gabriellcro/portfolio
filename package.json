@@ -19,6 +19,7 @@
     "cmdk": "^1.1.1",
     "framer-motion": "^12.6.5",
     "lucide-react": "^0.487.0",
+    "motion": "^12.6.5",
     "path": "^0.12.7",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",

@@ -5,10 +5,10 @@ import HomePage from "@/pages/home";
 
 export default function Layout() {
   return (
-    <section className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full max-w-[1920px] m-auto">
       <Header />
       <Container childers={<HomePage/>}/>
       <Footer />
-    </section>
+    </div>
   );
 }

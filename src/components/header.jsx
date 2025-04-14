@@ -15,16 +15,10 @@ export default function Header() {
   const isMobile = useIsMobile();
 
   return (
-    <section className="flex items-center justify-center border-b-[2px] px-5 border-dotted fixed w-full backdrop-blur-sm z-10">
-      <header className="flex justify-between max-w-[1920px] w-full border-dotted border-x-[2px] h-full items-center p-3 sm:p-5">
-        {isMobile ? (
-          <NavbarMobile tabs={data} />
-        ) : (
-          <NavbarDesktop tabs={data} />
-        )}
-
-        <ModeToggle />
-      </header>
-    </section>
+    <header className="flex justify-between max-w-[1920px] fixed backdrop-blur-sm w-full p-5">
+      {isMobile ? <NavbarMobile tabs={data} /> : <NavbarDesktop tabs={data} />}
+      
+      <ModeToggle />
+    </header>
   );
 }
