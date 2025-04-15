@@ -28,7 +28,7 @@ export default function ButtonGroup() {
               key={idx}
               size="sm"
               variant="outline"
-              className="flex items-center justify-center gap-2 capitalize"
+              className="flex items-center justify-center gap-2 capitalize font-mono"
               asChild
             >
               <a
