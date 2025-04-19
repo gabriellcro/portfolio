@@ -15,7 +15,6 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
-import { Button } from "./ui/button";
 
 const data = [
   { title: "Home", link: "/", icon: <Home /> },
