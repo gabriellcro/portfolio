@@ -1,7 +1,7 @@
 "use client";
 
 import { useIsMobile } from "@/hooks/useMobile";
-import { useCommandMenu } from '@/context/command-menu-context';
+import { useCommandMenu } from "@/context/command-menu-context";
 
 import { Button } from "./ui/button";
 import { TypographyInlineCode } from "./typography/typography-inline-code";
@@ -22,7 +22,9 @@ export default function ButtonCommand() {
       ) : (
         <>
           <span>Pressione</span>
-          <TypographyInlineCode content="ctrl K" />
+          <TypographyInlineCode className="inline-flex gap-1">
+            ctrl K
+          </TypographyInlineCode>
         </>
       )}
       <span>para iniciar</span>

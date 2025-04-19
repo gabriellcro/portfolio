@@ -1,25 +1,34 @@
 import Wrapper from "@/components/wrapper";
-
+import profileImage from "@/assets/image-profile.jpg";
 import { TypographyH2 } from "@/components/typography/typography-h2";
 import { TypographyP } from "@/components/typography/typography-p";
 import { MapPin, GraduationCap } from "lucide-react";
 import { TypographyMuted } from "@/components/typography/typography-muted";
 import { TypographyBlockquote } from "@/components/typography/typography-blockquote";
+import { motion } from "motion/react";
 
 export default function AboutPage() {
   return (
     <Wrapper>
       <TypographyH2>Sobre mim</TypographyH2>
-      <section className="flex flex-col gap-5 items-start sm:grid grid-cols-2">
-        <div>
+      <section className="flex flex-col gap-8 items-start sm:grid grid-cols-2">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: "tween", duration: 0.5 }}
+        >
           <img
-            src="./src/assets/image-profile.jpg"
+            src={profileImage}
             alt="Image"
-            className="rounded-md object-cover"
+            className="object-cover rounded-md"
           />
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: "tween", duration: 0.5, delay: 0.1 }}
+        >
           <div className="flex flex-wrap gap-5 mt-1">
             <div className="flex gap-2">
               <MapPin size={16} />
@@ -40,7 +49,7 @@ export default function AboutPage() {
                 aplicações robustas e intuitivas.
               </TypographyP>
               <TypographyP>
-                Minha stack atual inclui <strong>JavaScript/TypeScript</strong>,{" "}
+                Minha stack atual inclui <strong>JavaScript</strong>,{" "}
                 <strong>React</strong>, <strong>Node.js</strong> e ecossistemas
                 como <strong>Tailwind CSS</strong>, <strong>Zod</strong> e{" "}
                 <strong>Shadcn</strong>, sempre aplicando boas práticas e
@@ -55,7 +64,7 @@ export default function AboutPage() {
                   <strong>Versionamento</strong>: Git e fluxos colaborativos
                 </li>
                 <li>
-                  <strong>Banco de dados</strong>: PostgreSQL e explorando NoSQL
+                  <strong>Banco de dados</strong>: PostgreSQL e MongoDB
                 </li>
                 <li>
                   <strong>Design</strong>: Figma para prototipagem eficiente
@@ -65,8 +74,9 @@ export default function AboutPage() {
                   NestJS/Express (backend)
                 </li>
                 <li>
-                  <strong>Tecnologias emergentes</strong>: WebSocket e
-                  ferramentas como SQLGraphic
+                  <strong>Tecnologias Avançadas</strong>: WebSocket para
+                  comunicações em tempo real e GraphQL para APIs eficientes e
+                  flexíveis
                 </li>
               </ul>
               <TypographyBlockquote>
@@ -76,7 +86,7 @@ export default function AboutPage() {
               </TypographyBlockquote>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </Wrapper>
   );
