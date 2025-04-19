@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
-export function TypographyInlineCode({ content }) {
+export function TypographyInlineCode({ children }) {
   return (
     <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold">
-      {content}
+      {children}
     </code>
   );
 }
 
 TypographyInlineCode.prototypes = {
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };

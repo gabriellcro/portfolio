@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
-export default function Wrapper({ childers }) {
+export default function Wrapper({ children }) {
   return (
-    <main className="flex flex-1 justify-center w-full h-full p-5 mt-24 sm:mt-36">
-      {childers}
+    <main className="flex flex-col gap-8 flex-1 max-w-6xl w-full p-8 mt-12 sm:mt-28">
+      {children}
     </main>
   );
 }
 
 Wrapper.proptypes = {
-  childers: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };

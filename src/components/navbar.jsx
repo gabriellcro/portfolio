@@ -17,7 +17,6 @@ const tabs = [
   { title: "Home", link: "/" },
   { title: "Sobre mim", link: "/about" },
   { title: "Projetos", link: "/projects" },
-  { title: "Formação", link: "/graduation" },
   { title: "Contato", link: "/contact" },
 ];
 

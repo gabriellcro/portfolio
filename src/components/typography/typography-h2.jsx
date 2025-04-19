@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
-export function TypographyH2({ textContent }) {
+export function TypographyH2({ children }) {
   return (
-    <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      {textContent}
+    <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
+      {children}
     </h2>
   );
 }
 
 TypographyH2.proptypes = {
-  textContent: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };

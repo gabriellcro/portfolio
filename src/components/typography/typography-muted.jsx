@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-export function TypographyMuted({ textContent }) {
-  return <p className="text-sm text-muted-foreground">{textContent}</p>;
+export function TypographyMuted({ children }) {
+  return <p className="text-sm text-muted-foreground">{children}</p>;
 }
 
 TypographyMuted.proptypes = {
-  textContent: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };
