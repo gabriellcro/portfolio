@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function NotFoundPage() {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate("/");
+  const handleClick = () => navigate(-1);
 
   return (
     <section className="flex flex-col w-full h-screen justify-center items-center gap-12">

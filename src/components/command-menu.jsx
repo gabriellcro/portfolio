@@ -30,7 +30,6 @@ const menu = [
   { title: "Home", link: "/", icon: <Home /> },
   { title: "Sobre mim", link: "/about", icon: <User /> },
   { title: "Projetos", link: "/projects", icon: <Terminal /> },
-  { title: "Formação", link: "/graduation", icon: <GraduationCap /> },
   { title: "Contato", link: "/contact", icon: <Mail /> },
 ];
 
