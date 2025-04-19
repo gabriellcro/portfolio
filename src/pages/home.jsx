@@ -1,27 +1,19 @@
-import ButtonGroup from "@/components/button-group";
-import Menu from "@/components/menu";
-import { ModeToggle } from "@/components/mode-toggle";
-import { TypographyH3 } from "@/components/typography/typography-h3";
-import { TypographyLead } from "@/components/typography/typography-lead";
+import ButtonCommand from "@/components/button-command";
+import { TypographyH1 } from "@/components/typography/typography-h1";
 import { TypographyMuted } from "@/components/typography/typography-muted";
-import { Building2 } from "lucide-react";
+import { TypographyP } from "@/components/typography/typography-p";
 
 export default function HomePage() {
   return (
-    <section className="flex flex-col text-start items-center justify-center gap-12 max-w-md w-full m-auto p-8">
-      <header className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Building2 size={16} />
-          <TypographyMuted textContent="curitiba, pr" />
-        </div>
-        <ModeToggle />
-      </header>
+    <section className="flex flex-col gap-8 items-center justify-center text-center m-auto p-5">
+      <TypographyH1 textContent="Gabriel Oliveira" />
       <div className="flex flex-col gap-2 w-full">
-        <TypographyH3 textContent="Gabriel Cavalcante" />
-        <TypographyLead textContent="Desenvolvedor Front-end" />
+        <TypographyP textContent="Desenvolvedor Front-end" />
+        <TypographyMuted textContent="Obcecado pela experiência do usuário" />
       </div>
-      <Menu />
-      <ButtonGroup />
+      <div>
+        <ButtonCommand />
+      </div>
     </section>
   );
 }

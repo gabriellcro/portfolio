@@ -1,10 +1,10 @@
 import { ThemeProvider } from "./components/theme-provider";
-import Layout from "./layout/layout";
+import AppRouter from "./router/app-router";
 
 function App() {
   return (
     <ThemeProvider>
-      <Layout />
+      <AppRouter />
     </ThemeProvider>
   );
 }
