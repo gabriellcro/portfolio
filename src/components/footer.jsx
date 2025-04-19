@@ -1,33 +1,29 @@
 import { Button } from "./ui/button";
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 
-const data = [
+const socials = [
   {
-    title: "Github",
-    icon: <Github />,
     link: "https://github.com/gabriellcro",
+    icon: <Github />,
   },
   {
-    title: "Instagram",
-    icon: <Instagram />,
     link: "https://www.instagram.com/gabriellcro_",
+    icon: <Instagram />,
   },
   {
-    title: "LinkedIn",
-    icon: <Linkedin />,
     link: "https://www.linkedin.com/in/gabriellcro",
+    icon: <Linkedin />,
   },
   {
-    title: "Twitter",
-    icon: <Twitter />,
     link: "https://x.com/gabriellcro_",
+    icon: <Twitter />,
   },
 ];
 
 export default function Footer() {
   return (
     <footer className="flex items-center justify-center w-full p-5 text-primary">
-      {data.map((item, idx) => (
+      {socials.map((item, idx) => (
         <Button key={idx} variant="ghost" size="icon" asChild>
           <a href={item.link} target="_blank">
             {item.icon}

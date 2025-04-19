@@ -1,4 +1,3 @@
-// context/command-menu-context.js
 'use client';
 
 import { createContext, useContext, useState, useEffect } from 'react';
